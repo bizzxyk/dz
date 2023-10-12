@@ -1,25 +1,47 @@
 import java.util.Scanner;
-public class Main{
-	public static void main(String[] args) {
-            Scanner ab = new Scanner (System.in);
-            System.out.println("Введите порядковый номер дня недели: ");
-            int x = ab.nextInt(); //Цикл if..else..
-            if (x == 1){
+public class weekday{
+    public static void main(String[] args) {
+        Scanner ab = new Scanner (System.in);
+        System.out.println("Введите порядковый номер дня недели: ");
+        int x = ab.nextInt();
+       /* if (x == 1){
+            System.out.println("Понедельник");
+        }else if (x==2){
+            System.out.println("Вторник");
+        }else if (x==3){
+            System.out.println("Cреда");
+        }else if (x==4){
+            System.out.println("Четверг");
+        }else if (x==5){
+            System.out.println("Пятница");
+        }else if (x==6 || x==7){
+            System.out.println("Выходной");
+        }else{
+            System.out.println("Нет такого дня");*/
+        switch (x){ // дни недеои через switch-case
+            case(1):
                 System.out.println("Понедельник");
-            }else if (x==2){
+                break;
+            case(2):
                 System.out.println("Вторник");
-            }else if (x==3){
-                System.out.println("Cреда");
-            }else if (x==4){
+                break;
+            case(3):
+                System.out.println("Среда");
+                break;
+            case(4):
                 System.out.println("Четверг");
-            }else if (x==5){
+                break;
+            case(5):
                 System.out.println("Пятница");
-            }else if (x==6 || x==7){
+                break;
+            case(6):
                 System.out.println("Выходной");
-            }else{
-                System.out.println("Нет такого дня");
-            }
-
+                break;
+            case(7):
+                System.out.println("Выходной");
+                break;
         }
+
     }
+}
 	
